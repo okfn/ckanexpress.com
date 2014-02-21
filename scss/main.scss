@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+//Variables
+$brand-color: #045e7a;
+$brand-font-color: #fff;
+
+
+/*=====================================
+   Edits should be made to scss files!
+/*===================================== */
+
+//Import other scss files
+@import
+  "foundation/settings",
+  "normalize",
+	"foundation";
+
+.menu-icon {
+  width: auto; /* hack for menu icon bug */
+}
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.top-bar .name h1 a {
+	background-image: url(../img/logo.png);
+	background-position: left center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	overflow:hidden;
+	text-indent:-9999px;
+	margin-left:16.6667px;
+	padding-left:0;
+}
+.svg .top-bar .name h1 a {
+	background-image:url(../img/logo.svg);
+}
+.top-bar-section ul li > a {
+	
+}
+
+.content {
+	background-color:#FFF;
+	padding:10px 0;
+}
+.content > .banner {
+	margin-top:-10px;
+}
+.banner {
+	background-color:$brand-color;
+	color:$brand-font-color;
+	margin-bottom:rem-calc(20);
+	padding-top:10px;
+	h1, h2, h3, h4, h5, h6 {
+	  color:$brand-font-color;
+		display:none;
+	}
+	p {
+		font-size:rem-calc(18);
+	}
+}
+
+.page-footer {
+	background-color:$brand-color;
+	color:$brand-font-color;
+	padding:40px 0;
+	h6 {
+		color:$brand-font-color;
+	}
+	p, a {
+		color:$brand-font-color;
+		color:rgba($brand-font-color, 0.8);
+	}
+	a:hover {
+		color:$brand-font-color;
+	}
+}
+
+
+// Medium screens
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+	.top-bar {
+		height:120px;
+		padding-top:35px;
+	}
+	.top-bar .name h1 a {
+		width:260px;
+		background-size:auto;
+	}
+	.top-bar-section ul li > a {
+		font-size:rem-calc(20);
+	}
+	.content {
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	.content > .banner {
+		margin-top:-30px;
+	}
+	.banner {
+		margin-bottom:rem-calc(30);
+		background-image:url(../img/screen.png);
+		background-position: center bottom;
+		background-repeat:no-repeat;
+		padding-top:40px;
+		min-height:410px;
+		h1, h2, h3, h4, h5, h6 {
+			display:block;
+		}
+		h2 {
+			font-size:rem-calc(45);
+		}
+		h3 {
+			font-size:rem-calc(22);
+			font-family:$body-font-family;
+			margin-top:rem-calc(-18);
+			margin-bottom:rem-calc(18);
+		}
+		p {
+			font-size:rem-calc(20);
+			line-height:1.3;
+		}
+		.buttons {
+			margin-top:rem-calc(30);
+		}
+	}
+	.page-footer .columns {
+		border-right:solid 1px rgba($brand-font-color, 0.3);
+		min-height:130px;
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.page-footer .columns:last-child {
+		border:none;
+	}
+} 
+
+// Large screens
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { 
+	.content {
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.content > .banner {
+		margin-top:-50px;
+	}
+	.banner {
+		margin-bottom:rem-calc(60);
+		p {
+			padding-right:25px;
+		}
+	}
+	.svg .feature-list .icon {
+		padding-left:90px;
+		background-image:url(../img/icon-ckan.svg);
+		background-repeat:no-repeat;
+	}
+	.svg .feature-list .icon-code {
+		background-image:url(../img/icon-code.svg);
+	}
+	.svg .feature-list .icon-lock {
+		background-image:url(../img/icon-lock.svg);
+	}
+	.svg .feature-list .icon-cursor {
+		background-image:url(../img/icon-cursor.svg);
+	}
+	.svg .feature-list .icon-puzzle {
+		background-image:url(../img/icon-puzzle.svg);
+	}
+	.svg .feature-list .icon-chart {
+		background-image:url(../img/icon-chart.svg);
+	}
+	.svg .feature-list .icon-open {
+		background-image:url(../img/icon-open.svg);
+	}
+	.svg .feature-list .icon-phone {
+		background-image:url(../img/icon-phone.svg);
+	}
+	.svg .feature-list .icon-org {
+		background-image:url(../img/icon-org.svg);
+	}
+}
