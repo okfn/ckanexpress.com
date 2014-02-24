@@ -99,6 +99,12 @@ $brand-font-color: #fff;
 	}
 }
 
+.pricing-table.all-plans .bullet-item {
+	text-align:left;
+}
+.pricing-table.all-plans .bullet-item:last-child {
+	border-bottom:none;
+}
 
 // Medium screens
 /* min-width 641px, medium screens */
