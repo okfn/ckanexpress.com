@@ -6666,7 +6666,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 274, ../scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
+  font-size: 65%;
   color: #6f6f6f;
   line-height: 0;
 }
@@ -6736,7 +6736,7 @@ b {
 
 /* line 311, ../scss/foundation/components/_type.scss */
 small {
-  font-size: 60%;
+  font-size: 65%;
   line-height: inherit;
 }
 
@@ -7977,7 +7977,7 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 19, ../scss/main.scss */
+/* line 20, ../scss/main.scss */
 .menu-icon {
   width: auto;
   /* hack for menu icon bug */
@@ -7988,12 +7988,24 @@ th.hide-for-touch {
 /* Common
 /*
 /*****************************************************************************/
+/* line 30, ../scss/main.scss */
+h5 {
+  margin-bottom: 0;
+}
+
+/* line 35, ../scss/main.scss */
+.disc li,
+.circle li,
+.square li {
+  padding-bottom: 1rem;
+}
+
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
-/* line 36, ../scss/main.scss */
+/* line 45, ../scss/main.scss */
 .top-bar .name h1 a {
   background-image: url(../img/logo.png);
   background-position: left center;
@@ -8005,64 +8017,72 @@ th.hide-for-touch {
   padding-left: 0;
 }
 
-/* line 46, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .svg .top-bar .name h1 a {
   background-image: url(../img/logo.svg);
 }
 
-/* line 53, ../scss/main.scss */
+/* line 59, ../scss/main.scss */
 .content {
   background-color: #FFF;
   padding: 10px 0;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 .content > .banner {
   margin-top: -10px;
 }
 
-/* line 60, ../scss/main.scss */
+/* line 66, ../scss/main.scss */
 .banner {
+  background-color: #f7f7f7;
+  margin-bottom: 1.25rem;
+  padding-top: 10px;
+  border-bottom: solid 1px #dddddd;
+}
+
+/* line 72, ../scss/main.scss */
+.home.banner {
   background-color: #045e7a;
   color: white;
   margin-bottom: 1.25rem;
-  padding-top: 10px;
+  border: none;
 }
-/* line 65, ../scss/main.scss */
-.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
+/* line 77, ../scss/main.scss */
+.home.banner h1, .home.banner h2, .home.banner h3, .home.banner h4, .home.banner h5, .home.banner h6 {
   color: white;
   display: none;
 }
-/* line 69, ../scss/main.scss */
-.banner p {
+/* line 81, ../scss/main.scss */
+.home.banner p {
   font-size: 1.125rem;
 }
 
-/* line 74, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 .page-footer {
   background-color: #045e7a;
   color: white;
   padding: 40px 0;
 }
-/* line 78, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 .page-footer h6 {
   color: white;
 }
-/* line 81, ../scss/main.scss */
+/* line 93, ../scss/main.scss */
 .page-footer .columns {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 85, ../scss/main.scss */
+/* line 97, ../scss/main.scss */
 .page-footer p, .page-footer a {
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 89, ../scss/main.scss */
+/* line 101, ../scss/main.scss */
 .page-footer a:hover {
   color: white;
 }
-/* line 92, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .page-footer .sub-footer {
   font-size: 0.75rem;
   line-height: 1.3;
@@ -8072,59 +8092,41 @@ th.hide-for-touch {
   margin-top: 30px;
 }
 
-/* line 102, ../scss/main.scss */
-.pricing-table.all-plans .bullet-item {
-  text-align: left;
-}
-
-/* line 105, ../scss/main.scss */
-.pricing-table.all-plans .bullet-item:last-child {
-  border-bottom: none;
+/* line 114, ../scss/main.scss */
+.reveal-modal.screenshot {
+  text-align: center;
 }
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
-  /* line 112, ../scss/main.scss */
+  /* line 121, ../scss/main.scss */
   .top-bar {
     height: 120px;
     padding-top: 35px;
   }
 
-  /* line 116, ../scss/main.scss */
+  /* line 125, ../scss/main.scss */
   .top-bar .name h1 a {
     width: 260px;
     background-size: auto;
   }
 
-  /* line 120, ../scss/main.scss */
+  /* line 129, ../scss/main.scss */
   .top-bar-section ul li > a {
     font-size: 1.25rem;
   }
 
-  /* line 123, ../scss/main.scss */
+  /* line 132, ../scss/main.scss */
   .content {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  /* line 127, ../scss/main.scss */
+  /* line 136, ../scss/main.scss */
   .content > .banner {
     margin-top: -30px;
   }
 
-  /* line 130, ../scss/main.scss */
-  .banner {
-    margin-bottom: 1.875rem;
-    background-image: url(../img/screen.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    padding-top: 40px;
-    min-height: 410px;
-  }
-  /* line 137, ../scss/main.scss */
-  .banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
-    display: block;
-  }
   /* line 140, ../scss/main.scss */
   .banner h2 {
     font-size: 2.8125rem;
@@ -8137,91 +8139,113 @@ th.hide-for-touch {
     margin-bottom: 1.125rem;
   }
   /* line 149, ../scss/main.scss */
-  .banner p {
-    font-size: 1.25rem;
-    line-height: 1.3;
-  }
-  /* line 153, ../scss/main.scss */
   .banner .buttons {
     margin-top: 1.875rem;
   }
 
-  /* line 157, ../scss/main.scss */
+  /* line 153, ../scss/main.scss */
+  .home.banner {
+    background-image: url(../img/screen.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    min-height: 410px;
+    margin-bottom: 1.875rem;
+  }
+  /* line 160, ../scss/main.scss */
+  .home.banner h1, .home.banner h2, .home.banner h3, .home.banner h4, .home.banner h5, .home.banner h6 {
+    display: block;
+  }
+  /* line 163, ../scss/main.scss */
+  .home.banner p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  /* line 168, ../scss/main.scss */
   .page-footer .main-footer > .columns {
     border-right: solid 1px rgba(255, 255, 255, 0.3);
     min-height: 130px;
   }
 
-  /* line 161, ../scss/main.scss */
+  /* line 172, ../scss/main.scss */
   .page-footer .columns:last-child {
     border: none;
+  }
+
+  /* Pricing */
+  /* line 177, ../scss/main.scss */
+  .banner .pricing-table {
+    min-height: 28.25rem;
+    background-color: white;
+    margin-bottom: 2.5rem;
   }
 }
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-  /* line 169, ../scss/main.scss */
+  /* line 187, ../scss/main.scss */
   .content {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  /* line 173, ../scss/main.scss */
+  /* line 191, ../scss/main.scss */
   .content > .banner {
     margin-top: -50px;
   }
 
-  /* line 176, ../scss/main.scss */
-  .banner {
+  /* line 194, ../scss/main.scss */
+  .home.banner {
     margin-bottom: 3.75rem;
   }
-  /* line 178, ../scss/main.scss */
-  .banner p {
+  /* line 196, ../scss/main.scss */
+  .home.banner p {
     padding-right: 25px;
   }
 
-  /* line 182, ../scss/main.scss */
+  /* line 200, ../scss/main.scss */
   .svg .feature-list .icon {
     padding-left: 90px;
     background-image: url(../img/icon-ckan.svg);
     background-repeat: no-repeat;
   }
 
-  /* line 187, ../scss/main.scss */
+  /* line 205, ../scss/main.scss */
   .svg .feature-list .icon-code {
     background-image: url(../img/icon-code.svg);
   }
 
-  /* line 190, ../scss/main.scss */
+  /* line 208, ../scss/main.scss */
   .svg .feature-list .icon-lock {
     background-image: url(../img/icon-lock.svg);
   }
 
-  /* line 193, ../scss/main.scss */
+  /* line 211, ../scss/main.scss */
   .svg .feature-list .icon-cursor {
     background-image: url(../img/icon-cursor.svg);
   }
 
-  /* line 196, ../scss/main.scss */
+  /* line 214, ../scss/main.scss */
   .svg .feature-list .icon-puzzle {
     background-image: url(../img/icon-puzzle.svg);
   }
 
-  /* line 199, ../scss/main.scss */
+  /* line 217, ../scss/main.scss */
   .svg .feature-list .icon-chart {
     background-image: url(../img/icon-chart.svg);
   }
 
-  /* line 202, ../scss/main.scss */
+  /* line 220, ../scss/main.scss */
   .svg .feature-list .icon-open {
     background-image: url(../img/icon-open.svg);
   }
 
-  /* line 205, ../scss/main.scss */
+  /* line 223, ../scss/main.scss */
   .svg .feature-list .icon-phone {
     background-image: url(../img/icon-phone.svg);
   }
 
-  /* line 208, ../scss/main.scss */
+  /* line 226, ../scss/main.scss */
   .svg .feature-list .icon-org {
     background-image: url(../img/icon-org.svg);
   }

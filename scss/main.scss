@@ -4,6 +4,7 @@
 //Variables
 $brand-color: #045e7a;
 $brand-font-color: #fff;
+$grey: #dddddd;
 
 
 /*=====================================
@@ -26,6 +27,14 @@ $brand-font-color: #fff;
 /*
 /*****************************************************************************/
 
+h5 {
+	margin-bottom:0;
+}
+.disc li,
+.circle li,
+.square li {
+	padding-bottom:1rem;
+}
 
 /*****************************************************************************/
 /*
@@ -46,9 +55,6 @@ $brand-font-color: #fff;
 .svg .top-bar .name h1 a {
 	background-image:url(../img/logo.svg);
 }
-.top-bar-section ul li > a {
-	
-}
 
 .content {
 	background-color:#FFF;
@@ -58,10 +64,16 @@ $brand-font-color: #fff;
 	margin-top:-10px;
 }
 .banner {
+	background-color: lighten($grey, 10);
+	margin-bottom:rem-calc(20);
+	padding-top:10px;
+	border-bottom:solid 1px $grey;
+}
+.home.banner {
 	background-color:$brand-color;
 	color:$brand-font-color;
 	margin-bottom:rem-calc(20);
-	padding-top:10px;
+	border:none;
 	h1, h2, h3, h4, h5, h6 {
 	  color:$brand-font-color;
 		display:none;
@@ -99,11 +111,8 @@ $brand-font-color: #fff;
 	}
 }
 
-.pricing-table.all-plans .bullet-item {
-	text-align:left;
-}
-.pricing-table.all-plans .bullet-item:last-child {
-	border-bottom:none;
+.reveal-modal.screenshot {
+	text-align:center;
 }
 
 // Medium screens
@@ -128,15 +137,6 @@ $brand-font-color: #fff;
 		margin-top:-30px;
 	}
 	.banner {
-		margin-bottom:rem-calc(30);
-		background-image:url(../img/screen.png);
-		background-position: center bottom;
-		background-repeat:no-repeat;
-		padding-top:40px;
-		min-height:410px;
-		h1, h2, h3, h4, h5, h6 {
-			display:block;
-		}
 		h2 {
 			font-size:rem-calc(45);
 		}
@@ -146,12 +146,23 @@ $brand-font-color: #fff;
 			margin-top:rem-calc(-18);
 			margin-bottom:rem-calc(18);
 		}
+		.buttons {
+			margin-top:rem-calc(30);
+		}
+	}
+	.home.banner {
+		background-image:url(../img/screen.png);
+		background-position: center bottom;
+		background-repeat:no-repeat;
+		padding-top:40px;
+		min-height:410px;
+		margin-bottom:rem-calc(30);
+		h1, h2, h3, h4, h5, h6 {
+			display:block;
+		}
 		p {
 			font-size:rem-calc(20);
 			line-height:1.3;
-		}
-		.buttons {
-			margin-top:rem-calc(30);
 		}
 	}
 	.page-footer .main-footer > .columns {
@@ -160,6 +171,13 @@ $brand-font-color: #fff;
 	}
 	.page-footer .columns:last-child {
 		border:none;
+	}
+	
+	/* Pricing */
+	.banner .pricing-table {
+		min-height:rem-calc(452);
+		background-color:$price-bg;
+		margin-bottom:rem-calc(40);
 	}
 } 
 
@@ -173,7 +191,7 @@ $brand-font-color: #fff;
 	.content > .banner {
 		margin-top:-50px;
 	}
-	.banner {
+	.home.banner {
 		margin-bottom:rem-calc(60);
 		p {
 			padding-right:25px;
