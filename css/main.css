@@ -8074,7 +8074,7 @@ h5 {
   padding-bottom: 15px;
 }
 /* line 97, ../scss/main.scss */
-.page-footer p, .page-footer a {
+.page-footer p, .page-footer a, .page-footer li {
   color: white;
   color: rgba(255, 255, 255, 0.8);
 }
