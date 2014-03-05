@@ -109,6 +109,28 @@ h5 {
 		border-top:solid 1px rgba($brand-font-color, 0.3);
 		margin-top:30px;
 	}
+	.okf-footer ul {
+		margin-left:0.9375rem;
+		font-size:rem-calc(12);
+	}
+	.okf-footer ul li {
+		display:inline-block;
+		border-right:solid 1px rgba($brand-font-color, 0.3);
+		padding:0 7px 0 0;
+		margin:0 5px 0 0;
+	}
+	.okf-footer li:last-child {
+		padding:0;
+		margin:0;
+		border:none;
+	}
+	.okf-footer a {
+		opacity:0.8;
+		text-decoration:none;
+	}
+	.okf-footer a:hover {
+		opacity:1.0;
+  }
 }
 
 .reveal-modal.screenshot {

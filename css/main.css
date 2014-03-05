@@ -8091,59 +8091,86 @@ h5 {
   border-top: solid 1px rgba(255, 255, 255, 0.3);
   margin-top: 30px;
 }
+/* line 112, ../scss/main.scss */
+.page-footer .okf-footer ul {
+  margin-left: 0.9375rem;
+  font-size: 0.75rem;
+}
+/* line 116, ../scss/main.scss */
+.page-footer .okf-footer ul li {
+  display: inline-block;
+  border-right: solid 1px rgba(255, 255, 255, 0.3);
+  padding: 0 7px 0 0;
+  margin: 0 5px 0 0;
+}
+/* line 122, ../scss/main.scss */
+.page-footer .okf-footer li:last-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* line 127, ../scss/main.scss */
+.page-footer .okf-footer a {
+  opacity: 0.8;
+  text-decoration: none;
+}
+/* line 131, ../scss/main.scss */
+.page-footer .okf-footer a:hover {
+  opacity: 1.0;
+}
 
-/* line 114, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .reveal-modal.screenshot {
   text-align: center;
 }
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
-  /* line 121, ../scss/main.scss */
+  /* line 143, ../scss/main.scss */
   .top-bar {
     height: 120px;
     padding-top: 35px;
   }
 
-  /* line 125, ../scss/main.scss */
+  /* line 147, ../scss/main.scss */
   .top-bar .name h1 a {
     width: 260px;
     background-size: auto;
   }
 
-  /* line 129, ../scss/main.scss */
+  /* line 151, ../scss/main.scss */
   .top-bar-section ul li > a {
     font-size: 1.25rem;
   }
 
-  /* line 132, ../scss/main.scss */
+  /* line 154, ../scss/main.scss */
   .content {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  /* line 136, ../scss/main.scss */
+  /* line 158, ../scss/main.scss */
   .content > .banner {
     margin-top: -30px;
   }
 
-  /* line 140, ../scss/main.scss */
+  /* line 162, ../scss/main.scss */
   .banner h2 {
     font-size: 2.8125rem;
   }
-  /* line 143, ../scss/main.scss */
+  /* line 165, ../scss/main.scss */
   .banner h3 {
     font-size: 1.375rem;
     font-family: Lato, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     margin-top: -1.125rem;
     margin-bottom: 1.125rem;
   }
-  /* line 149, ../scss/main.scss */
+  /* line 171, ../scss/main.scss */
   .banner .buttons {
     margin-top: 1.875rem;
   }
 
-  /* line 153, ../scss/main.scss */
+  /* line 175, ../scss/main.scss */
   .home.banner {
     background-image: url(../img/screen.png);
     background-position: center bottom;
@@ -8152,29 +8179,29 @@ h5 {
     min-height: 410px;
     margin-bottom: 1.875rem;
   }
-  /* line 160, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   .home.banner h1, .home.banner h2, .home.banner h3, .home.banner h4, .home.banner h5, .home.banner h6 {
     display: block;
   }
-  /* line 163, ../scss/main.scss */
+  /* line 185, ../scss/main.scss */
   .home.banner p {
     font-size: 1.25rem;
     line-height: 1.3;
   }
 
-  /* line 168, ../scss/main.scss */
+  /* line 190, ../scss/main.scss */
   .page-footer .main-footer > .columns {
     border-right: solid 1px rgba(255, 255, 255, 0.3);
     min-height: 130px;
   }
 
-  /* line 172, ../scss/main.scss */
+  /* line 194, ../scss/main.scss */
   .page-footer .columns:last-child {
     border: none;
   }
 
   /* Pricing */
-  /* line 177, ../scss/main.scss */
+  /* line 199, ../scss/main.scss */
   .banner .pricing-table {
     min-height: 28.25rem;
     background-color: white;
@@ -8183,69 +8210,69 @@ h5 {
 }
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) {
-  /* line 187, ../scss/main.scss */
+  /* line 209, ../scss/main.scss */
   .content {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  /* line 191, ../scss/main.scss */
+  /* line 213, ../scss/main.scss */
   .content > .banner {
     margin-top: -50px;
   }
 
-  /* line 194, ../scss/main.scss */
+  /* line 216, ../scss/main.scss */
   .home.banner {
     margin-bottom: 3.75rem;
   }
-  /* line 196, ../scss/main.scss */
+  /* line 218, ../scss/main.scss */
   .home.banner p {
     padding-right: 25px;
   }
 
-  /* line 200, ../scss/main.scss */
+  /* line 222, ../scss/main.scss */
   .svg .feature-list .icon {
     padding-left: 90px;
     background-image: url(../img/icon-ckan.svg);
     background-repeat: no-repeat;
   }
 
-  /* line 205, ../scss/main.scss */
+  /* line 227, ../scss/main.scss */
   .svg .feature-list .icon-code {
     background-image: url(../img/icon-code.svg);
   }
 
-  /* line 208, ../scss/main.scss */
+  /* line 230, ../scss/main.scss */
   .svg .feature-list .icon-lock {
     background-image: url(../img/icon-lock.svg);
   }
 
-  /* line 211, ../scss/main.scss */
+  /* line 233, ../scss/main.scss */
   .svg .feature-list .icon-cursor {
     background-image: url(../img/icon-cursor.svg);
   }
 
-  /* line 214, ../scss/main.scss */
+  /* line 236, ../scss/main.scss */
   .svg .feature-list .icon-puzzle {
     background-image: url(../img/icon-puzzle.svg);
   }
 
-  /* line 217, ../scss/main.scss */
+  /* line 239, ../scss/main.scss */
   .svg .feature-list .icon-chart {
     background-image: url(../img/icon-chart.svg);
   }
 
-  /* line 220, ../scss/main.scss */
+  /* line 242, ../scss/main.scss */
   .svg .feature-list .icon-open {
     background-image: url(../img/icon-open.svg);
   }
 
-  /* line 223, ../scss/main.scss */
+  /* line 245, ../scss/main.scss */
   .svg .feature-list .icon-phone {
     background-image: url(../img/icon-phone.svg);
   }
 
-  /* line 226, ../scss/main.scss */
+  /* line 248, ../scss/main.scss */
   .svg .feature-list .icon-org {
     background-image: url(../img/icon-org.svg);
   }
