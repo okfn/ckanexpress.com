@@ -115,9 +115,7 @@ navigation:
   <script src="{{ site.baseurl}}/js/foundation.min.js"></script>
   <script src="//assets.okfn.org/themes/okfn/okf-footer/okf-footer.js" type="text/javascript"></script>
   <script>
-    $(document).foundation();
-		
-		// GET URL variables.
+	  // GET URL variables.
 		function getQueryVariable(variable) {
        var query = window.location.search.substring(1);
        var vars = query.split("&");
@@ -127,28 +125,31 @@ navigation:
        }
        return(false);
 		}
-		
-		// Currency switch
-		$(function () {
-			$('html').addClass('currency-gbp');
-			var currency = getQueryVariable('currency');
-			if (currency === 'GBP') {
-				$('html').removeClass('currency-usd currency-eur');
-				$('html').addClass('currency-gbp');
-				$('.currency.sub-nav dd').removeClass('active');
-				$('.currency.sub-nav dd.gbp-link').addClass('active');
-			}
-			if (currency === 'USD') {
-				$('html').removeClass('currency-gbp currency-eur');
-				$('html').addClass('currency-usd');
-				$('.currency.sub-nav dd').removeClass('active');
-				$('.currency.sub-nav dd.usd-link').addClass('active');
-			}
-			if (currency === 'EUR') {
-				$('html').removeClass('currency-gbp currency-usd');
-				$('html').addClass('currency-eur');
-				$('.currency.sub-nav dd').removeClass('active');
-				$('.currency.sub-nav dd.eur-link').addClass('active');
+    $(document).foundation({
+			equalizer: {
+				before_height_change: function(){
+					// do something before the height changes
+					$('html').addClass('currency-gbp');
+					var currency = getQueryVariable('currency');
+					if (currency === 'GBP') {
+						$('html').removeClass('currency-usd currency-eur');
+						$('html').addClass('currency-gbp');
+						$('.currency.sub-nav dd').removeClass('active');
+						$('.currency.sub-nav dd.gbp-link').addClass('active');
+					}
+					if (currency === 'USD') {
+						$('html').removeClass('currency-gbp currency-eur');
+						$('html').addClass('currency-usd');
+						$('.currency.sub-nav dd').removeClass('active');
+						$('.currency.sub-nav dd.usd-link').addClass('active');
+					}
+					if (currency === 'EUR') {
+						$('html').removeClass('currency-gbp currency-usd');
+						$('html').addClass('currency-eur');
+						$('.currency.sub-nav dd').removeClass('active');
+						$('.currency.sub-nav dd.eur-link').addClass('active');
+					}
+				}
 			}
 		});
 
