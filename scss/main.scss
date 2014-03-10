@@ -36,6 +36,22 @@ h5 {
 	padding-bottom:1rem;
 }
 
+.sub-nav dt {
+	margin-right:rem-calc(10);
+}
+.sub-nav dd {
+	margin-left:rem-calc(4);
+}
+.sub-nav dt a,
+.sub-nav dd a,
+.sub-nav li a,
+.sub-nav dt.active a,
+.sub-nav dd.active a,
+.sub-nav li.active a {
+	padding-left:rem-calc(10);
+	padding-right:rem-calc(10);
+}
+
 /*****************************************************************************/
 /*
 /* Site
@@ -136,6 +152,21 @@ h5 {
   }
 }
 
+.currency.sub-nav {
+	display:none;
+}
+.js .currency.sub-nav {
+	display:block;
+}
+.js.currency-gbp .usd,
+.js.currency-gbp .eur,
+.js.currency-usd .gbp,
+.js.currency-usd .eur,
+.js.currency-eur .gbp,
+.js.currency-eur .usd {
+	display:none;
+}
+
 .reveal-modal.screenshot {
 	text-align:center;
 }
@@ -201,6 +232,9 @@ h5 {
 	.banner .pricing-table {
 		background-color:$price-bg;
 		margin-bottom:rem-calc(40);
+	}
+	.currency.sub-nav {
+		float:right;
 	}
 } 
 
