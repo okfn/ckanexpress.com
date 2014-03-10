@@ -192,7 +192,6 @@ h5 {
 	}
 	.page-footer .main-footer > .columns {
 		border-right:solid 1px rgba($brand-font-color, 0.3);
-		min-height:130px;
 	}
 	.page-footer .columns:last-child {
 		border:none;
@@ -200,7 +199,6 @@ h5 {
 	
 	/* Pricing */
 	.banner .pricing-table {
-		min-height:rem-calc(452);
 		background-color:$price-bg;
 		margin-bottom:rem-calc(40);
 	}
