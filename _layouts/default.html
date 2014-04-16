@@ -23,7 +23,7 @@ navigation:
   <script src="{{ site.baseurl}}/js/vendor/modernizr.js"></script>
 
 </head>
-<body>
+<body {% if page.class %} class="{{ page.class }}"{% endif %}>
   <div class="contain-to-grid">
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
