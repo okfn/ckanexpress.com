@@ -52,11 +52,6 @@ h5 {
 	padding-right:rem-calc(10);
 }
 
-textarea { 
-  height: auto;
-}
-
-
 /*****************************************************************************/
 /*
 /* Site
@@ -176,7 +171,6 @@ textarea {
 	text-align:center;
 }
 
-
 // Medium screens
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
@@ -289,8 +283,4 @@ textarea {
 	.svg .feature-list .icon-org {
 		background-image:url(../img/icon-org.svg);
 	}
-}
-
-body.contact .content {
-  padding-bottom:0;
 }
