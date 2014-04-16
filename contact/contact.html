@@ -1,0 +1,24 @@
+<html>
+<body>
+ <form action="http://ckan-express-contact.herokuapp.com/new" method="post">
+
+  <script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6LfN1_ESAAAAABgKhymanyjLTxaqpmewh9HbpWSE ">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfN1_ESAAAAABgKhymanyjLTxaqpmewh9HbpWSE"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+  </noscript>
+
+  Name: <input type="text" name="name"><br>
+  Email: <input type="text" name="email"><br>
+  Subject: <input type="text" name="subject"><br>
+  Comment: <textarea rows=10 name="comment"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
